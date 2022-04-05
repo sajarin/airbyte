@@ -32,6 +32,7 @@ const cloudWindowConfigProvider: ConfigProvider<CloudConfig> = async () => {
     firebase: {
       apiKey: window.FIREBASE_API_KEY,
       authDomain: window.FIREBASE_AUTH_DOMAIN,
+      authEmulatorHost: window.FIREBASE_AUTH_EMULATOR_HOST,
     },
     cloudApiUrl: window.CLOUD_API_URL,
   };
@@ -43,6 +44,7 @@ const cloudEnvConfigProvider: ConfigProvider<CloudConfig> = async () => {
     firebase: {
       apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
       authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+      authEmulatorHost: process.env.REACT_APP_FIREBASE_AUTH_EMULATOR_HOST,
     },
     fullstory: {
       orgId: process.env.REACT_APP_FULL_STORY_ORG,
